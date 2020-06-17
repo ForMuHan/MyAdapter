@@ -18,7 +18,7 @@
 
 
   dependencies {
-	        implementation 'com.github.ForMuHan:MyAdapter:Tag'
+	        implementation 'com.github.ForMuHan:MyAdapter:v1.0'
 	}
 
 
