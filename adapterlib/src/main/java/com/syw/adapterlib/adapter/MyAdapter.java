@@ -90,7 +90,7 @@ public class MyAdapter<T> extends RecyclerView.Adapter<ViewHolder> {
             View view = holder.getBinding().getRoot().findViewById(viewId);
             view.setOnClickListener(v -> {
                 if (viewListener != null) {
-                    viewListener.onViewClick(view, holder.getAdapterPosition());
+                    viewListener.onViewClick(holder.itemView, holder.getAdapterPosition());
                 }
             });
         } catch (Exception e) {
