@@ -2,31 +2,39 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
+
         <variable
             name="texts"
-            type="com.syw.adapter.TestBean"/>
+            type="com.syw.adapter.TestBean" />
     </data>
 
-    <LinearLayout
-        android:id="@+id/parent"
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
+        android:layout_height="50dp">
 
-        <TextView
-            android:id="@+id/text1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@{texts.text1}"
-            android:gravity="center" />
+        <LinearLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
 
-        <TextView
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@{texts.text1}" />
+        </LinearLayout>
+
+        <Button
             android:id="@+id/text2"
-            android:layout_width="0dp"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@{texts.text2}"
-            android:gravity="center" />
-    </LinearLayout>
+            android:background="#ff0000"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+
 </layout>
