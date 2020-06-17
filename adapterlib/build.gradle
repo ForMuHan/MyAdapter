@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.ForMuHan'//xxxx为你github昵称
 
 android {
     compileSdkVersion 28
